@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta tag-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Corpboot - Professional Corporate Template">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="LeverNgear">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--title-->
+    <title>Corpboot Template</title>
+
+    <!--title icon-->
+    <link rel="shortcut icon" href="img/titlelogo.jpg" type="image/x-icon" />
+    <!--css stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!--responsive css -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <!--js for icon-->
+    <script src="icon/icon5.js"></script>
+
+    <!--jQuery-->
+    <script src="jQuery/jquery-3.5.1.js"></script>
+
+</head>
+
+<body>
+
+    <div id="grid-container">
+
+        <!-- Menu -->
+        <div class="top-bar" id="myTopnav">
+            <div class="main_container">
+                <div class="menu-flex">
+                    <span class="logo">
+                        CORP<span style="color:#39CCCC">BOOT</span>
+                    </span>
+
+                    <!-- Hamburger icon -->
+                    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" aria-label="Toggle menu">
+                        <i class="fas fa-bars show-bar"></i>
+                        <i class="fas fa-times hide-times" style="display:none;"></i>
+                    </a>
+
+                    <nav aria-label="Main navigation">
+                        <ul class="nav-menu">
+                            <li><a href="index.htm">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Pages</a>
+                                <div class="dropdown-content">
+                                    <a href="aboutusone.htm">About Us One</a>
+                                    <a href="aboutustwo.htm" class="active">About Us Two</a>
+                                </div>
+                            </li>
+                            <li><a href="services.htm">Services</a></li>
+                            <li><a href="blog.htm">Blog</a></li>
+                            <li><a href="contact.htm">Contact</a></li>
+                            <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+        <!--aboutusheadline-->
+        <div class="aboutusheadline grid-section">
+            <div class="main_container">
+                <div class="headline">
+                    <h1>ABOUT US</h1>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="columntwo">
+                    <div class="about-content">
+                        <p> <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat libero, pulvinar tincidunt leo consectetur eget. Nulla vitae adipiscing nisi, in dignissim nisl. Cras iaculis purus nec massa commodo, sit amet varius tellus commodo. Phasellus interdum erat libero, pulvinar tincidunt tiger consectetur eget. Suspendisse semper vulputate leo ut cursus.</p>
+                        <p>Curabitur lacinia pellentesque tempor. Utah euismod condimentum velit en gravida. Nulla vitae adipiscing nisi, in dignissim nisl. Cras nec tellus eget urna facilisis scelerisque vitae et sapien. Suspendisse semper vulputate leo ut cursus. Nulla vitae adipiscing nisi, in dignissim nisl. Cras iaculis purus nec massa commodo, sit amet varius tellus commodo.</p>
+                    </div>
+
+                    <div class="mission-block">
+                        <img src="img/mission.jpg" alt="Mission">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- OUR HISTORY -->
+        <div class="ourhistory grid-section">
+            <div class="main_container">
+                <div class="headline">
+                    <h1>OUR HISTORY</h1>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="columntwo">
+                    <div class="timeline">
+                        <div class="timeline-item timeactive" onclick="showHistory('period1', this)">2005 - 2010</div>
+                        <div class="timeline-item" onclick="showHistory('period2', this)">2010 - 2015</div>
+                        <div class="timeline-item" onclick="showHistory('period3', this)">2015 - 2020</div>
+                    </div>
+
+                    <div id="period1" class="history-content historyactive">
+                        <h3>2005 - 2010</h3>
+                        <p style="margin: 15px 0;">“Our story begins with a blend of experience and innovation.
+                            Every project we deliver carries professionalism, creativity, and modern solutions.
+                            Corpboot Template is designed to be simple, flexible, and business-ready.
+                            Our mission is to give your brand a strong and distinctive online identity.”</p>
+                        <img src="img/history2.jpg" alt="History">
+                    </div>
+
+                    <div id="period2" class="history-content">
+                        <h3>2010 - 2015</h3>
+                        <p style="margin: 15px 0;">“Our story begins with a blend of experience and innovation.
+                            Every project we deliver carries professionalism, creativity, and modern solutions.
+                            Corpboot Template is designed to be simple, flexible, and business-ready.
+                            Our mission is to give your brand a strong and distinctive online identity.”</p>
+                        <img src="img/history3.jpg" alt="History">
+                    </div>
+
+                    <div id="period3" class="history-content">
+                        <h3>2015 - 2020</h3>
+                        <p style="margin: 15px 0;">“Our story begins with a blend of experience and innovation.
+                            Every project we deliver carries professionalism, creativity, and modern solutions.
+                            Corpboot Template is designed to be simple, flexible, and business-ready.
+                            Our mission is to give your brand a strong and distinctive online identity.”</p>
+                        <img src="img/history4.jpg" alt="History">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--ourskillsheadline-->
+        <div class="ourskillsheadline grid-section">
+            <div class="main_container">
+                <div class="headline">
+                    <h1>OUR SKILLS</h1>
+                    <div class="header-line" style="background: linear-gradient(to right, #cbe6de, #ffffff);"></div>
+                </div>
+
+                <div class="columntwo">
+                    <div class="skillscontentform" style="margin-bottom: 20px;">
+                        <img src="img/skills.jpg" alt="skill" width="100%" style="margin-bottom: 10px;">
+
+                        <p style="font-weight: normal;">
+                            Sed posuere vestibulum pulvinar felis, malesuada ante, a gravida ipsum congue id. Cras tempus libero sit amet mauris blandit laoreet. Vestibulum ac enim vel tellus pharetra pellentesque vitae vitae lacus. Etiameth consequat vestibulum pulvinar felis, hendrerit congue. Proin commodo metus ac augue adipiscing, ac aliquet eros posuere.
+                        </p>
+                    </div>
+
+                    <div class="skillscontentform">
+                        <p>Marketing</p>
+                        <div class="container" style="margin-bottom: 10px;">
+                            <div class="skillsbar html">90%</div>
+                        </div>
+
+                        <p>E-Buisness</p>
+                        <div class="container" style="margin-bottom: 10px;">
+                            <div class="skillsbar css">80%</div>
+                        </div>
+
+                        <p>Training</p>
+                        <div class="container" style="margin-bottom: 10px;">
+                            <div class="skillsbar js">65%</div>
+                        </div>
+
+                        <p>E-Commerce</p>
+                        <div class="container" style="margin-bottom: 10px;">
+                            <div class="skillsbar php">60%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MANAGEMENT TEAM -->
+        <div class="managementteam grid-section">
+            <div class="main_container">
+                <div class="headline">
+                    <div class="header-line" style="margin-right: 25px;"></div>
+                    <h1>OUR MANAGEMENT TEAM</h1>
+                </div>
+
+                <!-- Slider Container -->
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <div class="profile-pic">
+                                <img src="img/manager.jpg" alt="Manager">
+                            </div>
+                            <h2>Jane Doe</h2>
+                            <p><em>Business Manager</em></p>
+                            <p>Summary: Sed posuere malesuada ante, a gravida ipsum congue id.</p>
+                            <h4>Highlights</h4>
+                            <ul>
+                                <li>✔ Business development</li>
+                                <li>✔ Forecasting and analysis</li>
+                                <li>✔ Superb time management skills</li>
+                            </ul>
+                        </div>
+
+                        <div class="slide">
+                            <div class="profile-pic">
+                                <img src="img/marketing%20manager.jpg" alt="Marketing Manager">
+                            </div>
+                            <h2>John Smith</h2>
+                            <p><em>Marketing Manager</em></p>
+                            <p>Summary: Sed posuere malesuada ante, a gravida ipsum congue id.</p>
+                            <h4>Highlights</h4>
+                            <ul>
+                                <li>✔ Strategic marketing</li>
+                                <li>✔ Team leadership</li>
+                                <li>✔ Market analysis</li>
+                            </ul>
+                        </div>
+
+                        <div class="slide">
+                            <div class="profile-pic">
+                                <img src="img/general%20manager.jpg" alt="General Manager">
+                            </div>
+                            <h2>Michael Brown</h2>
+                            <p><em>Finance Manager</em></p>
+                            <p>Summary: Sed posuere malesuada ante, a gravida ipsum congue id.</p>
+                            <h4>Highlights</h4>
+                            <ul>
+                                <li>✔ Business finance</li>
+                                <li>✔ Risk management</li>
+                                <li>✔ Budget planning</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="moveSlide(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+        <!--somefacts-->
+        <div class="somefacts grid-section">
+            <div class="main_container">
+                <div class="headline">
+                    <h1>SOME FACTS</h1>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="columnfour">
+                    <div class="ach_item">
+                        <i class="far fa-image"></i>
+                        <span class="counter">7358</span>
+                        <p>Projects complete</p>
+                    </div>
+
+                    <div class="ach_item">
+                        <i class="fas fa-users"></i>
+                        <span class="counter">687</span>
+                        <p>Happy Customers</p>
+                    </div>
+
+                    <div class="ach_item">
+                        <i class="fas fa-clock"></i>
+                        <span class="counter">5000</span>
+                        <p>Hours work</p>
+                    </div>
+
+                    <div class="ach_item">
+                        <i class="fas fa-code"></i>
+                        <span class="counter">10300</span>
+                        <p>Lines of code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div class="footer grid-section">
+            <div class="main_container">
+                <div class="columnthree">
+                    <div>
+                        <h3>About Us</h3>
+                        <p>CorpBoot is a modern corporate template designed with Dockstrap, offering sleek and professional solutions for businesses. We empower organizations to build a strong digital presence with intuitive design and cutting-edge functionality.</p>
+
+                        <h3 style="margin-top: 15px;">Our Mission:</h3>
+                        <p>To simplify corporate branding through customizable, high-quality templates that adapt to diverse business needs.</p>
+
+                        <h3 style="margin-top: 15px;">Our Vision:</h3>
+                        <p>To be the go-to platform for businesses seeking efficient, scalable, and visually compelling web solutions.</p>
+
+                    </div>
+                    <div>
+                        <h3>Photo Gallery</h3>
+                        <div class="photo-grid">
+                            <img src="img/photogallery/gall1.jpg" alt="Gallery1">
+                            <img src="img/photogallery/gall2.jpg" alt="Gallery2">
+                            <img src="img/photogallery/gall3.jpg" alt="Gallery3">
+                            <img src="img/photogallery/gall4.jpg" alt="Gallery4">
+                            <img src="img/photogallery/gall5.jpg" alt="Gallery5">
+                            <img src="img/photogallery/gall6.jpg" alt="Gallery6">
+                        </div>
+                    </div>
+                    <div class="subscribe-form">
+                        <div class="form-row">
+                            <input type="email" placeholder="Enter your email">
+                            <button type="submit">Subscribe</button>
+                        </div>
+                        <p>
+                            We respect your privacy. No spam, unsubscribe anytime. <br>
+                            By subscribing, you agree to our <a href="#">Terms & Conditions</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--copyright-->
+        <div class="copyright grid-section">
+            <div class="main_container">
+                <div class="copyarea">
+                    <div class="socialmedia">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="reserve">
+                        <span>&copy; CORPBOOT 2017. All Rights Reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <!-- CounterUp -->
+    <script src="js/jquery.counterup.js"></script>
+
+    <!--myScript js-->
+    <script src="js/myScript.js"></script>
+
+
+</body>
+
+</html>

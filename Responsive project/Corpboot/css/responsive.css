@@ -1,0 +1,1197 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    #grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-section {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Column → One column */
+    .columntwo, .columnthree, .columnfour {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .somefacts .columnfour {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 1rem;
+    }
+
+    .main_container {
+        padding: 0 15px;
+    }
+
+    .top-bar {
+        padding: 10px 0;
+        position: relative;
+    }
+
+    /*===== Main Menu responsive for all pages =====*/
+    .menu-flex {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        padding: 0 15px;
+    }
+
+    /* Show hamburger icon */
+    .top-bar a.icon {
+        display: block;
+        margin-right: 15px;
+        color: white;
+    }
+
+    .top-bar.responsive nav {
+        display: block;
+        width: 100vw;
+        position: relative;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    /* Hide the nav menu by default */
+    nav .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #092834;
+        position: relative;
+        margin-top: 10px;
+        left: 0;
+    }
+
+    /* Show menu when active */
+    nav .nav-menu.show {
+        display: flex;
+    }
+
+    /* Menu items styling */
+    .nav-menu li {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #1a4d5f;
+    }
+
+    .nav-menu li a {
+        width: 100%;
+        display: block;
+        padding: 15px 20px;
+        color: #F5F5F5;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    /* Dropdown menu for mobile */
+    .dropdown-content {
+        width: 100%;
+        position: static;
+        background-color: #1a2e40;
+        box-shadow: none;
+        display: none;
+    }
+
+    .dropdown-content.show {
+        display: block;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 12px 40px;
+        border-bottom: 1px solid #1a4d5f;
+        text-decoration: none;
+    }
+
+    .top-bar.responsive a.icon i.fa-bars {
+        display: none;
+    }
+
+    .top-bar.responsive a.icon i.fa-times {
+        display: inline-block;
+    }
+
+    .top-bar a.icon {
+        text-decoration: none !important;
+        border-bottom: none !important;
+    }
+
+    .top-bar a.icon:focus,
+    .top-bar a.icon:active,
+    .top-bar a.icon:hover {
+        text-decoration: none !important;
+        border-bottom: none !important;
+        outline: none !important;
+    }
+
+    /*==================================
+           Index Page
+    ==================================*/
+
+    .hero {
+        height: auto;
+        min-height: 250px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 20px 10px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .hero .container {
+        padding: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .hero h1 .highlight {
+        font-size: 1.4rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        margin-top: 8px;
+    }
+
+    .hero .download-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+        margin-top: 15px;
+        border-radius: 5px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .clients-logos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /*==================================
+           About us one Page
+    ==================================*/
+
+    .missionvisionvalues {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .missionvisionvalues img, .skillscontentform, .main_container,
+    .managementteam .card img { width: 100%; }
+
+    .managementteam h1, .somefacts h1 { font-size: 1.8rem; }
+    
+    
+    /*==================================
+           Contact Page
+    ==================================*/
+    
+    .contact-content { grid-template-columns: 1fr; }
+    
+    .contact-page { margin: 0; }
+    
+    .map-container iframe { width: 100%; }
+    
+    .contact-right input, .contact-right textarea { margin-bottom: 12px; }
+
+
+    /*===== Footer area=====*/
+    .footer .columnthree {
+        flex-direction: column;
+    }
+
+    .photo-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo-grid img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .copyarea {
+        display: grid;
+        line-height: 50px;
+        margin-top: 10px;
+    }
+
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+
+    #grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-section {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Column → One column */
+    .columntwo,
+    .columnthree {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .somefacts .columnfour {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 1rem;
+    }
+
+    .main_container {
+        padding: 0 15px;
+    }
+
+    .top-bar {
+        padding: 10px 0;
+        position: relative;
+    }
+
+    /*===== Main Menu responsive for all pages =====*/
+    .menu-flex {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        padding: 0 15px;
+    }
+
+    /* Show hamburger icon */
+    .top-bar a.icon {
+        display: block !important;
+        margin-right: 15px;
+        color: white;
+        font-size: 24px;
+    }
+
+    .top-bar.responsive nav {
+        display: block;
+        width: 100vw;
+        position: relative;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    /* Hide the nav menu by default */
+    nav .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #092834;
+        position: relative;
+        margin-top: 10px;
+        left: 0;
+    }
+
+    /* Show menu when active */
+    nav .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #1a4d5f;
+    }
+
+    .nav-menu li a {
+        width: 100%;
+        display: block;
+        padding: 15px 20px;
+        color: #F5F5F5;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        position: static;
+        background-color: #1a2e40;
+        box-shadow: none;
+        display: none;
+    }
+
+    .dropdown-content.show {
+        display: block;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 12px 40px;
+        border-bottom: 1px solid #1a4d5f;
+        text-decoration: none;
+    }
+
+    .top-bar.responsive a.icon i.fa-bars {
+        display: none;
+    }
+
+    .top-bar.responsive a.icon i.fa-times {
+        display: inline-block;
+    }
+
+    .top-bar a.icon {
+        text-decoration: none !important;
+        border-bottom: none !important;
+    }
+
+    .top-bar a.icon:focus,
+    .top-bar a.icon:active,
+    .top-bar a.icon:hover {
+        text-decoration: none !important;
+        border-bottom: none !important;
+        outline: none !important;
+    }
+
+    /*==================================
+           Index Page
+    ==================================*/
+    .hero {
+        min-height: 450px;
+    }
+
+    /* Additional layouts */
+    .featureproduct {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .clients-logos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .managementteam .columnfour {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .blog-page .columntwo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .aboutdescription {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /*==================================
+           About us one Page
+    ==================================*/
+    
+    .missionvisionvalues { grid-template-columns: repeat(1, 1fr); }
+    
+    .missionvisionvalues img, .skillscontentform, .main_container,
+    .managementteam .card img { width: 100%; }
+    
+    .managementteam h1, .somefacts h1 {
+        font-size: 24px;
+    }
+    
+    /*==================================
+           Contact Page
+    ==================================*/
+    
+    .contact-content { grid-template-columns: 1fr; }
+    
+    .contact-page { margin: 0; }
+    
+    .map-container iframe { width: 100%; }
+    
+    .contact-right input, .contact-right textarea { margin-bottom: 12px; }
+
+    /*===== Footer area=====*/
+    .footer .columnthree {
+        flex-direction: column;
+    }
+
+    .photo-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo-grid img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .copyarea {
+        display: grid;
+        line-height: 50px;
+        margin-top: 10px;
+    }
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /* আগে ছিল */
+    .columntwo,
+    .columnthree,
+    .columnfour {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    /* এখন */
+    .columnfour {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .somefacts .columnfour {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 1rem;
+    }
+
+    /*===== Main Menu responsive for all pages =====*/
+    .menu-flex {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        padding: 0 15px;
+    }
+
+    /* Show hamburger icon */
+    .top-bar a.icon {
+        display: block !important;
+        margin-right: 15px;
+        color: white;
+        font-size: 24px;
+    }
+
+    .top-bar.responsive nav {
+        display: block;
+        width: 100vw;
+        position: relative;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    /* Hide the nav menu by default */
+    nav .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #092834;
+        position: relative;
+        margin-top: 10px;
+        left: 0;
+    }
+
+    /* Show menu when active */
+    nav .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #1a4d5f;
+    }
+
+    .nav-menu li a {
+        width: 100%;
+        display: block;
+        padding: 15px 20px;
+        color: #F5F5F5;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        position: static;
+        background-color: #1a2e40;
+        box-shadow: none;
+        display: none;
+    }
+
+    .dropdown-content.show {
+        display: block;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 12px 40px;
+        border-bottom: 1px solid #1a4d5f;
+        text-decoration: none;
+    }
+
+    .top-bar.responsive a.icon i.fa-bars {
+        display: none;
+    }
+
+    .top-bar.responsive a.icon i.fa-times {
+        display: inline-block;
+    }
+
+    .top-bar a.icon {
+        text-decoration: none !important;
+        border-bottom: none !important;
+    }
+
+    .top-bar a.icon:focus,
+    .top-bar a.icon:active,
+    .top-bar a.icon:hover {
+        text-decoration: none !important;
+        border-bottom: none !important;
+        outline: none !important;
+    }
+
+    /*==================================
+           Index Page
+    ==================================*/
+    .latestnews .columnthree {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .latestnews .columnthree .news-item:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .latestnews .columnthree .news-item:last-child img {
+        width: 100%;
+        height: auto;
+    }
+
+    .featureproduct {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .clients-logos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+
+    .managementteam .columnfour {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-page .columntwo {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /*==================================
+           About us one Page
+    ==================================*/
+    
+    .missionvisionvalues img, .skillscontentform {
+        width: 100%;
+        height: auto;
+    }
+    
+    .managementteam .card img { width: 100%; }
+    
+    .aboutusheadline .columntwo {
+        grid-template-columns: 1fr;
+    }
+    
+    /*==================================
+           Blog Page
+    ==================================*/
+    
+    .blog-page .columntwo {
+        grid-template-columns: 1fr 1fr !important;
+    }
+    
+    /*==================================
+           Contact Page
+    ==================================*/
+    
+    .contact-content { grid-template-columns: 1fr; }
+    
+    .map-container iframe { width: 100%; }
+    
+    .contact-right input, .contact-right textarea { margin-bottom: 12px; }
+    
+    
+    
+
+    /*===== Footer area=====*/
+    .footer .columnthree {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer .columnthree div:first-child,
+    .footer .columnthree div:nth-child(2),
+    .footer .columnthree div:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .footer .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .footer .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .footer .photo-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    .copyarea {
+        display: grid;
+        line-height: 50px;
+        margin-top: 10px;
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    /*===== Main Menu responsive for all pages =====*/
+    .menu-flex {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        padding: 0 15px;
+    }
+
+    /* Show hamburger icon */
+    .top-bar a.icon {
+        display: block !important;
+        margin-right: 15px;
+        color: white;
+        font-size: 24px;
+    }
+
+    .top-bar.responsive nav {
+        display: block;
+        width: 100vw;
+        position: relative;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    /* Hide the nav menu by default */
+    nav .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #092834;
+        position: relative;
+        margin-top: 10px;
+        left: 0;
+    }
+
+    /* Show menu when active */
+    nav .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #1a4d5f;
+    }
+
+    .nav-menu li a {
+        width: 100%;
+        display: block;
+        padding: 15px 20px;
+        color: #F5F5F5;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        position: static;
+        background-color: #1a2e40;
+        box-shadow: none;
+        display: none;
+    }
+
+    .dropdown-content.show {
+        display: block;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 12px 40px;
+        border-bottom: 1px solid #1a4d5f;
+        text-decoration: none;
+    }
+
+    .top-bar.responsive a.icon i.fa-bars {
+        display: none;
+    }
+
+    .top-bar.responsive a.icon i.fa-times {
+        display: inline-block;
+    }
+
+    .top-bar a.icon {
+        text-decoration: none !important;
+        border-bottom: none !important;
+    }
+
+    .top-bar a.icon:focus,
+    .top-bar a.icon:active,
+    .top-bar a.icon:hover {
+        text-decoration: none !important;
+        border-bottom: none !important;
+        outline: none !important;
+    }
+
+    /*==================================
+           Index Page
+    ==================================*/
+    .hero {
+        height: 450px;
+    }
+
+    .hero h1,
+    .hero h1 .highlight {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-top: 0;
+    }
+    
+    /*==================================
+           About us one Page
+    ==================================*/
+    
+    .aboutusheadline .columntwo {
+        grid-template-columns: 1fr;
+    }
+    
+    /*==================================
+           Blog Page
+    ==================================*/
+    
+    .blog-page .columntwo {
+        grid-template-columns: 1fr 1fr !important;
+    }
+    
+    .contact-content { grid-template-columns: 1fr; }
+    
+    .map-container iframe { width: 100%; }
+    
+    .contact-right input, .contact-right textarea { margin-bottom: 12px; }
+    
+    /*==================================
+           Contact Page
+    ==================================*/
+    
+    .map-container iframe { width: 100%; }
+    
+    .contact-page { margin: 0px 30px; }
+    
+
+    /*===== Footer area=====*/
+    .footer .columnthree {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer .columnthree .photo-grid {
+        grid-template-columns: repeat(1fr, 1fr);
+    }
+
+    .footer .columnthree div:first-child,
+    .footer .columnthree div:nth-child(2),
+    .footer .columnthree div.subscribe-form {
+        grid-column: 1 / -1;
+    }
+
+    .footer .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .footer .photo-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    .copyarea {
+        display: grid;
+        line-height: 50px;
+        margin-top: 10px;
+    }
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    /*=== Two column layout ===*/
+    .columntwo {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    /*=== Three column layout ===*/
+    .columnthree {
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+
+    /*=== Four column layout ===*/
+    .columnfour {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+
+    /*===== Main Menu for all pages =====*/
+    .top-bar.responsive nav {
+        position: static; 
+        top: auto;       
+        width: auto;     
+        display: block;  
+    }
+    
+    .top-bar {
+        padding: 0;
+    }
+
+    .menu-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%; 
+        position: relative;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #F5F5F5;
+        z-index: 1001;
+    }
+
+    nav {
+        width: 50%;
+    }
+
+    /* Default nav-menu styles for desktop */
+    nav .nav-menu {
+        display: flex !important;
+        flex-direction: row !important;
+        background-color: transparent !important;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 0 !important;
+        position: static !important;
+        left: auto !important;  
+    } 
+
+    .nav-menu li {
+        position: relative;
+        border-bottom: none !important;
+        width: auto !important;
+        text-align: center;  
+    }
+
+    .nav-menu li a,
+    .dropbtn {
+        padding: 14px 16px;
+        width: auto;
+    }
+
+    .nav-menu li a:hover {
+        background-color: #00A896;
+        color: white;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #1A2E40;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-content a {
+        padding: 10px;
+        color: #39CCCC;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        color: white;
+        background-color: #00A896;
+    }
+
+    .dropdown.open .dropdown-content,
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .top-bar .dropdown > a::after {
+        content: "\f107";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        margin-left: 6px;
+        font-size: 12px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    /* Hamburger icon - hidden by default on desktop */
+    .top-bar a.icon {
+        display: none !important;
+    }
+
+    .dropdown .dropbtn {
+        position: relative;
+        padding-right: 30px;
+    }
+
+    .arrow {
+        margin-left: 5px;
+    }
+
+    .top-bar a.icon {
+        text-decoration: none !important;
+        border-bottom: none !important;
+    }
+
+    .top-bar a.icon:focus,
+    .top-bar a.icon:active,
+    .top-bar a.icon:hover {
+        text-decoration: none !important;
+        border-bottom: none !important;
+        outline: none !important;
+    }
+
+
+    /*==================================
+           Index Page
+    ==================================*/
+
+    /* Optimize hero section */
+    .hero {
+        height: 600px;
+    }
+
+    /* Improve button sizes */
+    .hero .download-btn,
+    .cleancallout button.buy-btn,
+    .blog-posts a.readmore,
+    .send-message-btn {
+        padding: 15px 32px;
+        font-size: 16px;
+    }
+
+    .latestnews .columnthree {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .latestnews .columnthree .news-item:last-child {
+        grid-column: auto;
+    }
+
+    .aboutcompany {
+        padding: 40px 20px;
+    }
+
+    /* Optimize feature items */
+    .feature-item {
+        padding: 30px;
+    }
+
+    .feature-item i {
+        font-size: 60px;
+    }
+
+    /* Improve timeline for large screens */
+    .timeline {
+        gap: 25px;
+    }
+
+    .timeline-item {
+        padding: 15px 25px;
+        font-size: 18px;
+    }
+
+    .clients-logos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr) !important;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .clients-logos img {
+        height: 60px;
+        width: auto;
+        object-fit: contain;
+    }
+
+    /* Management team */
+    .management .card img {
+        height: 300px;
+    }
+    
+    /*==================================
+           About us one Page
+    ==================================*/
+    
+    .columnfour {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 1rem;
+    }
+
+    /* ✅ Some Facts section - 4 columns */
+    .somefacts .columnfour {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 1rem;
+    }
+    
+    .missionvisionvalues { grid-template-columns: repeat(3, 1fr); }
+    
+    .missionvisionvalues img { height: 150px; }
+    
+    .managementteam h1, .somefacts h1 { font-size: 36px; }
+    
+    .somefacts .columnfour { grid-template-columns: auto;  }
+    
+    
+    /*==================================
+           Blog Page
+    ==================================*/
+    
+    .blog-page .columntwo {
+        grid-template-columns: 2fr 1fr !important;
+    }
+
+    /*===== Footer area=====*/
+    .footer {
+        padding: 50px 0;
+    }
+
+    .footer .columnthree {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .footer .columnthree div:first-child,
+    .footer .columnthree div:nth-child(2),
+    .footer .columnthree div.subscribe-form {
+        grid-column: auto;
+    }
+
+    .footer .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .footer .photo-grid img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .copyright {
+        padding: 1rem 0;
+    }
+
+    .copyarea {
+        display: flex;
+        line-height: normal;
+        margin-top: 0;
+    }
+
+    /* Image quality optimization */
+    img, video {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta tag-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Corpboot - Professional Corporate Template">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="LeverNgear">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--title-->
+    <title>Corpboot Template</title>
+
+    <!--title icon-->
+    <link rel="shortcut icon" href="img/titlelogo.jpg" type="image/x-icon" />
+    <!--css stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    <!--responsive css -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <!--js for icon-->
+    <script src="icon/icon5.js"></script>
+
+    <!--jQuery-->
+    <script src="jQuery/jquery-3.5.1.js"></script>
+
+</head>
+
+<body>
+
+    <div id="grid-container">
+
+        <!-- Menu -->
+        <div class="top-bar" id="myTopnav">
+            <div class="main_container">
+                <div class="menu-flex">
+                    <span class="logo">
+                        CORP<span style="color:#39CCCC">BOOT</span>
+                    </span>
+
+                    <!-- Hamburger icon -->
+                    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" aria-label="Toggle menu">
+                        <i class="fas fa-bars show-bar"></i>
+                        <i class="fas fa-times hide-times" style="display:none;"></i>
+                    </a>
+
+                    <nav aria-label="Main navigation">
+                        <ul class="nav-menu">
+                            <li><a href="index.htm">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Pages</a>
+                                <div class="dropdown-content">
+                                    <a href="aboutusone.htm">About Us One</a>
+                                    <a href="aboutustwo.htm">About Us Two</a>
+                                </div>
+                            </li>
+                            <li><a href="services.htm" class="active">Services</a></li>
+                            <li><a href="blog.htm">Blog</a></li>
+                            <li><a href="contact.htm">Contact</a></li>
+                            <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+        
+        <!--Corporate section-->
+        <div class="corporate grid-section">
+            <div class="main_container">
+                <div class="headline">
+                    <h1>CORPORATE SERVICES</h1>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="columntwo">
+                    <div class="corpimg">
+                        <img src="img/serv1.jpg" alt="services" style="margin-bottom: 15px;">
+                        <p style="text-align: justify;">
+                            Our corporate services are designed to drive modern business. We don't just build websites, we provide strategic solutions to strengthen your organization's digital identity.
+                        </p>
+                    </div>
+
+                    <div class="developtalk">
+                        <h4><i class="fas fa-code fa-2x" style="color: #28A745;"></i> Web Development</h4>
+                        <p>Customized and responsive website development that makes your brand stand out online.</p>
+
+                        <h4><i class="fas fa-mobile-alt fa-2x" style="color: #FF914D;"></i> Responsive Design</h4>
+                        <p>Responsive design that gives users the best experience on smartphones, tablets, and desktops.</p>
+
+                        <h4><i class="fab fa-html5 fa-2x" style="color: #E44D26;"></i> Bootstrap Templates</h4>
+                        <p>Easy-to-use and customizable templates that make corporate branding more dynamic.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Personal Services -->
+        <div class="personalservices grid-section">
+            <div class="main_container">
+                
+                <div class="headline">
+                    <div class="header-line" style="margin-left: 0; margin-right: 20px;"></div>
+                    <h1>PERSONAL SERVICES</h1>
+                </div>
+
+                <div class="columntwo">
+                    <div class="service-content">
+                        <div class="service-item">
+                            <i class="fas fa-rocket fa-2x" style="color: #39CCCC;"></i>
+                            <h3>Landing Page</h3>
+                            
+                            <h4>“First impressions are the last impressions.”</h4>
+                            
+                            <p>
+                                Our designed landing pages present your product or service in an attractive way to the audience. Clean layouts, conversion-focused designs, and responsive structures make your campaign successful.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-pencil-alt fa-2x" style="color: #FF914D;"></i>
+                            <h3>Logo Design</h3>
+                            
+                            <h4>“A logo is not just a design, it is your brand identity.”</h4>
+                            
+                            <p>
+                                We create creative, modern and unique logos that accurately express your business values. Our goal is to create simple yet memorable designs.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <i class="fas fa-chalkboard-teacher fa-2x" style="color: #00A896;"></i>
+                            <h3>Training</h3>
+                            
+                            <h4>“Skill development is the key to a successful career.”</h4>
+                            
+                            <p>
+                                Our training programs include opportunities to learn web design, graphic design, and digital marketing. We prepare you industry-ready through experienced trainers and practical classes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-img">
+                        <img src="img/serv2.jpg" alt="Personal Services" style="margin-bottom: 10px;">
+                        <p>
+                            Sed posuere malesuada ante, a gravida ipsum congue id. Cras tempus libero sit amet mauris
+                            blandit laoreet. Vestibulum ac enim vel tellus pharetra pellentesque vitae vitae lacus.
+                            Etiam consequat hendrerit congue.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div class="footer grid-section">
+            <div class="main_container">
+                <div class="columnthree">
+                    <div>
+                        <h3>About Us</h3>
+                        <p>CorpBoot is a modern corporate template designed with Dockstrap, offering sleek and professional solutions for businesses. We empower organizations to build a strong digital presence with intuitive design and cutting-edge functionality.</p>
+
+                        <h3 style="margin-top: 15px;">Our Mission:</h3>
+                        <p>To simplify corporate branding through customizable, high-quality templates that adapt to diverse business needs.</p>
+
+                        <h3 style="margin-top: 15px;">Our Vision:</h3>
+                        <p>To be the go-to platform for businesses seeking efficient, scalable, and visually compelling web solutions.</p>
+
+                    </div>
+                    <div>
+                        <h3>Photo Gallery</h3>
+                        <div class="photo-grid">
+                            <img src="img/photogallery/gall1.jpg" alt="Gallery1">
+                            <img src="img/photogallery/gall2.jpg" alt="Gallery2">
+                            <img src="img/photogallery/gall3.jpg" alt="Gallery3">
+                            <img src="img/photogallery/gall4.jpg" alt="Gallery4">
+                            <img src="img/photogallery/gall5.jpg" alt="Gallery5">
+                            <img src="img/photogallery/gall6.jpg" alt="Gallery6">
+                        </div>
+                    </div>
+                    <div class="subscribe-form">
+                        <div class="form-row">
+                            <input type="email" placeholder="Enter your email">
+                            <button type="submit">Subscribe</button>
+                        </div>
+                        <p>
+                            We respect your privacy. No spam, unsubscribe anytime. <br>
+                            By subscribing, you agree to our <a href="#">Terms & Conditions</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--copyright-->
+        <div class="copyright grid-section">
+            <div class="main_container">
+                <div class="copyarea">
+                    <div class="socialmedia">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="reserve">
+                        <span>&copy; CORPBOOT 2017. All Rights Reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="js/myScript.js"></script>
+    
+</body>
+
+</html>
